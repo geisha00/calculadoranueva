@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mi Calculadora</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Calculadora</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-2 col-md-2 col-lg-2"></div>
+            <input class="btn btn btn-outline-primary col-sm-8 col-md-8 col-lg-8" id="pantalla">
+            <div class="col-sm-2 col-md-2 col-lg-2"></div>
+        </div><br>
+        <div class="row justify-content-center">
+            <div class="col-sm-2 col-md-2 col-lg-2"></div>
+            <button class="btn  btn-info col-sm-2 col-md-2 col-lg-2" type="button" id="7" onclick="botonNumerico(7)">7</button>
+            <button class="btn  btn-info col-sm-2 col-md-2 col-lg-2" type="button" id="8" onclick="botonNumerico(8)">8</button>
+            <button class="btn  btn-info col-sm-2 col-md-2 col-lg-2" type="button" id="9" onclick="botonNumerico(9)">9</button>
+            <button class="btn  btn-primary col-sm-3 col-md-3 col-lg-2" type="button" id="dividir" onclick="botonOperador('/')">/</button>
+            <div class="col-sm-2 col-md-2 col-lg-2"></div>
+        </div><br>
+
+        <div class="row justify-content-center">
+            <div class="col-sm-2 col-md-2 col-lg-2"></div>
+            <button class="btn btn-info  col-sm-2 col-md-2 col-lg-2" type="button" id="4" onclick="botonNumerico(4)">4</button>
+            <button class="btn btn-info  col-sm-2 col-md-2 col-lg-2" type="button" id="5" onclick="botonNumerico(5)">5</button>
+            <button class="btn btn-info  col-sm-2 col-md-2 col-lg-2" type="button" id="6" onclick="botonNumerico(6)">6</button>
+            <button class="btn btn-primary  col-sm-2 col-md-2 col-lg-2" type="button" id="multiplica" onclick="botonOperador('*')">*</button>
+            <div class="col-sm-2 col-md-2 col-lg-2"></div>
+        </div><br>
+
+        <div class="row  justify-content-center">
+            <div class="col-sm-2 col-md-2 col-lg-2"></div>
+            <button class="btn btn-info col-sm-2 col-md-2 col-lg-2" type="button" id="1" onclick="botonNumerico(1)">1</button>
+            <button class="btn btn-info col-sm-2 col-md-2 col-lg-2" type="button" id="2" onclick="botonNumerico(2)">2</button>
+            <button class="btn btn-info col-sm-2 col-md-2 col-lg-2" type="button" id="id3" onclick="botonNumerico(3)">3</button>
+            <button class="btn btn-primary col-sm-2 col-md-2 col-lg-" type="button" onclick="botonOperador('-')" id="resta">-</button>
+            <div class="col-sm-2 col-md-2 col-lg-2"></div>
+        </div><br>
+
+
+        <div class="row justify-content-center">
+            <div class="col-sm-2 col-md-2 col-lg-2"></div>
+            <button class="btn btn-info  col-sm-2 col-md-2 col-lg-2" type="button" id="0" onclick="botonNumerico(0)">0</button>
+            <button class="btn btn-info  col-sm-2 col-md-2 col-lg-2" type="button" id="." onclick="botonNumerico('.')">.</button>
+            <button class="btn btn-info  col-sm-2 col-md-2 col-lg-2" col-sm-3 col-md-3 col-lg-3 type="button" onclick="botonOperador('+')" id="+">+</button>
+            <button class="btn btn-success  col-sm-2 col-md-2 col-lg-2" type="button" id="igual" onclick="botonIgualar()">=</button>
+            <div class="col-sm-2 col-md-2 col-lg-2"></div>
+        </div>
+    </div>
+    <div>
+        <br>
+    </div>
+
+    <div id="idJquery" style="height: 200px; width: 200px ;background-color:black" ></div>
+
+    <script >crearCalculadora();</script>
+    <script src="main.js"></script>
+</body>
+
+</html>
